@@ -30,6 +30,14 @@ Echostr is a micro-application doing just one thing as good as possible. It will
 - [ ] Get list of relay recommendations based on your social graph
 - [ ] Ask your followers to do the same with a note to build even a better relay graph with this tool
 
+## NIPs implementation
+
+- [ ] NIP-02
+- [ ] NIP-11
+- [ ] NIP-20
+- [ ] NIP-42
+- [ ] NIP-65
+
 ## TODOs
 
 - [x] Init Vue project  
@@ -78,14 +86,6 @@ npm run build
 ```sh
 npm run lint
 ```
-
-## NIPs implementation
-
-- [ ] NIP-02
-- [ ] NIP-11
-- [ ] NIP-20
-- [ ] NIP-42
-- [ ] NIP-65
 
 ## How to contribute
 
