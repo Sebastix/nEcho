@@ -96,4 +96,6 @@ npm run lint
 ## About the author
 
 Sebastian Hagens is a self-employed creative technologist as a webdeveloper and tech consultant.  
-Follow Sebastian on Nostr with pubkey `npub1qe3e5wrvnsgpggtkytxteaqfprz0rgxr8c3l34kk3a9t7e2l3acslezefe` or NIP-05 ID: `sebastian@sebastix.dev`
+Follow Sebastian on Nostr:  
+Pubkey `npub1qe3e5wrvnsgpggtkytxteaqfprz0rgxr8c3l34kk3a9t7e2l3acslezefe`  
+NIP-05 ID: `sebastian@sebastix.dev`
