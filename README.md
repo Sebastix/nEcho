@@ -1,42 +1,63 @@
 # Echostr
 
-Echostr is a micro-application doing just one thing as good as possible. It will echo (advertise) your relay preferences to your social graph on nostr.
+Echostr is a micro-application on the web doing just one thing as good as possible. It will echo (advertise) your relay preferences to your social graph on nostr. It means that it's trying to tell the clients of your followers which relay they should read to get the events you're posting. 
 
 [https://github.com/nostr-protocol/nips/blob/master/65.md](https://github.com/nostr-protocol/nips/blob/master/65.md)
 
-
 > 💡 The purpose of this NIP is to help clients find the events of the people they follow, to help tagged events get to the people tagged, and to help nostr scale better.
 
-*Notes from the author @Sebastix* 
+NIP-65 is submitted by Mike Dilger who is the author of Gossip.  
+To learn more about Mike, Gossip and NIP-65 you should listen to this [Nostrovia podcast episode](https://fountain.fm/episode/13389100721).
+
+> Gossip follows people at the relays they profess to post to. That means it has to discover which relays those are and make smart relay selection choices based on things like which relays cover the most people you follow.
+
+[Video about the Gossip relay model](https://mikedilger.com/gossip-relay-model.mp4)
+
+*Notes from the author @Sebastian* 
 * I started this project because I'm **scratching my own itch**. I'm loosing my list of relays and followed contacts because the use of different clients. 
 * **I’m an advocate of more nostr clients need to adopt NIP-65 for this reason. With Echostr I’m trying to proof that purpose in practice.**
 * I'm not familiar (yet) with all the NIPs from nostr and I'm learning among the way by doing.
+* This is my first piece of software I'm developing for Nostr.
+
+### Other relevant resources
+
+- https://github.com/nostr-protocol/nips/pull/349
+- https://github.com/nostr-protocol/nips/pull/230
+- https://github.com/nostr-protocol/nips/pull/218
+- https://bountsr.org/design/2023/01/26/relay-based-design.html
 
 ## Application flow
 
-- [ ] Authenticate with your nostr ID
+- [ ] Authenticate with your nostr ID with your npub1
 - [ ] Get your social graph
-    - [ ] List of followers
-    - [ ] List of followed
-    - [ ] Search for relays where your npub lives (inspired by Coracle.social)
-      - [ ] Use [nostr.watch](http://nostr.watch) as a source
-    - [ ] Get relay list of each followed person
-      - [ ] Check their relays on their NIP-05 identifier
-- [ ] Get an overview of the relay where your events live
+  - [ ] Contact list 
+      - [ ] List of followers
+      - [ ] List of following
+      - [ ] Search for relays where your npub1 lives [inspired by Coracle.social](https://github.com/staab/coracle/blob/1e0b032d0384f389deb5ac458e8146b17ff3c13b/src/agent/cmd.ts#L13)
+        - [ ] Use [nostr.watch](http://nostr.watch) as a source
+      - [ ] Get relay list of each followed person
+        - [ ] Check their relays on their NIP-05 internet identifier
+        - [ ] Find relay list event 10002
+- [ ] Get an overview of the relays where your events live
 - [ ] Push / delegate selected list of relays to your social graph with event kind `10002`
 - [ ] Store your selected relays as a backup (JSON file)
   - [ ] On your personal relay
   - [ ] On your device
 - [ ] Get list of relay recommendations based on your social graph
-- [ ] Ask your followers to do the same with a note to build even a better relay graph with this tool
+  - [ ] Relays where to read from
+  - [ ] Relays where to post to
+- [ ] Ask your followers to do the same by posting a note to build even a better relay graph with this tool. Ask the client authors to implement NIP-65 for this.
 
-## NIPs implementation
+## NIP implementations
 
-- [ ] NIP-02
-- [ ] NIP-11
-- [ ] NIP-20
-- [ ] NIP-42
-- [ ] NIP-65
+- [ ] NIP-02 - Contact List and Petnames
+- [ ] NIP-05 - Mapping Nostr keys to DNS-based internet identifiers
+- [ ] NIP-07 - `window.nostr` capability for web browsers
+- [ ] NIP-11 - Relay Information Document
+- [ ] NIP-20 - Command Results
+- [ ] NIP-42 - Authentication of clients to relays
+- [ ] NIP-65 - Relay List Metadata
+- [ ] NIP-78 - Arbitrary custom app data
 
 ## TODOs
 
@@ -95,7 +116,7 @@ npm run lint
 
 ## About the author
 
-Sebastian Hagens is a self-employed creative technologist as a webdeveloper and tech consultant.  
+Sebastian Hagens is a self-employed creative technologist working as a webdeveloper and tech consultant.  
 Follow Sebastian on Nostr:  
 Pubkey `npub1qe3e5wrvnsgpggtkytxteaqfprz0rgxr8c3l34kk3a9t7e2l3acslezefe`  
-NIP-05 ID: `sebastian@sebastix.dev`
+NIP-05 id `sebastian@sebastix.dev`
