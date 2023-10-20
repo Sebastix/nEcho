@@ -25,6 +25,7 @@ To learn more about Mike, Gossip and NIP-65 you should listen to this [Nostrovia
 - https://github.com/nostr-protocol/nips/pull/230
 - https://github.com/nostr-protocol/nips/pull/218
 - https://bountsr.org/design/2023/01/26/relay-based-design.html
+- https://overcast.fm/+_cNZFP9sg/48:30 Nostr Talks with Hodlbod about relay discovery and gossiping 
 
 ## Application flow
 
@@ -37,7 +38,8 @@ To learn more about Mike, Gossip and NIP-65 you should listen to this [Nostrovia
         - [ ] Use [nostr.watch](http://nostr.watch) as a source
       - [ ] Get relay list of each followed person
         - [ ] Check their relays on their NIP-05 internet identifier
-        - [ ] Find relay list event 10002
+        - [ ] Find events with kind 10002 which contains relay list metadata
+        - [ ] Check relay hints (tags) of notes
 - [ ] Get an overview of the relays where your events live
 - [ ] Push / delegate selected list of relays to your social graph with event kind `10002`
 - [ ] Store your selected relays as a backup (JSON file)
@@ -62,14 +64,20 @@ To learn more about Mike, Gossip and NIP-65 you should listen to this [Nostrovia
 ## TODOs
 
 - [x] Init Vue project  
-- [ ] Add README.me  
-- [ ] Push project to Github
-- [ ] Make a scheme of the application flow 
+- [x] Add README.me  
+- [x] Push project to Github
+- [ ] Make a scheme of the application flow
+- [ ] Ask for feedback on the concept 
+- [ ] Build
 
 ## Requirements
 
 * Node
 * NPM
+
+Possible dependencies to use
+
+* https://github.com/nbd-wtf/nostr-tools
 
 ## Tech stack
 
