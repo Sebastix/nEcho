@@ -15,9 +15,9 @@ To learn more about Mike, Gossip and NIP-65 you should listen to this [Nostrovia
 
 *Notes from the author @Sebastian* 
 * I started this project because I'm **scratching my own itch**. I'm loosing my list of relays and followed contacts because the use of different clients. 
-* **I’m an advocate of more nostr clients need to adopt NIP-65 for this reason. With Echostr I’m trying to proof that purpose in practice.**
-* I'm not familiar (yet) with all the NIPs from nostr and I'm learning among the way by doing.
-* This is my first piece of software I'm developing for Nostr.
+* **I’m an advocate of more Nostr clients need to adopt NIP-65 for this reason. With Echostr I’m trying to proof that purpose in practice.**
+* I'm not familiar (yet) with all the NIPs from Nostr and I'm learning among the way by doing.
+* This is one of my first pieces of software I'm developing for Nostr.
 
 ### Other relevant resources
 
@@ -29,7 +29,7 @@ To learn more about Mike, Gossip and NIP-65 you should listen to this [Nostrovia
 
 ## Application flow
 
-- [ ] Authenticate with your nostr ID with your npub1
+- [ ] Authenticate with your Nostr profile
 - [ ] Get your social graph
   - [ ] Contact list 
       - [ ] List of followers
@@ -82,7 +82,6 @@ Possible dependencies to use
 ## Tech stack
 
 * Vue 3 with Vite
-* TypeScript support
 
 ## Customize configuration
 
@@ -100,19 +99,19 @@ npm install
 
 ### Compile and Hot-Reload for Development
 
-```sh
+```bash
 npm run dev
 ```
 
 ### Type-Check, Compile and Minify for Production
 
-```sh
+```bash
 npm run build
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
 
-```sh
+```bash
 npm run lint
 ```
 
@@ -124,7 +123,7 @@ npm run lint
 
 ## About the author
 
-Sebastian Hagens is a self-employed creative technologist working as a webdeveloper and tech consultant.  
+Sebastian Hagens is a self-employed creative technologist working as a fullstack webdeveloper and tech consultant.  
 Follow Sebastian on Nostr:  
 Pubkey `npub1qe3e5wrvnsgpggtkytxteaqfprz0rgxr8c3l34kk3a9t7e2l3acslezefe`  
 NIP-05 id `sebastian@sebastix.dev`
