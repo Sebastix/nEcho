@@ -61,14 +61,15 @@ To learn more about Mike, Gossip and NIP-65 you should listen to this [Nostrovia
 - [ ] NIP-65 - Relay List Metadata
 - [ ] NIP-78 - Arbitrary custom app data
 
-## TODOs
+## Features + roadmap 
 
 - [x] Init Vue project  
 - [x] Add README.me  
 - [x] Push project to Github
-- [ ] Make a scheme of the application flow
+- [ ] Make a scheme of the application flow with Excalidraw
 - [ ] Ask for feedback on the concept 
-- [ ] Build
+- [ ] Fund the project with sats & zaps
+- [ ] Build it
 
 ## Requirements
 
@@ -109,12 +110,6 @@ npm run dev
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```bash
-npm run lint
-```
-
 ## How to contribute
 
 1. Create an issue
@@ -123,7 +118,9 @@ npm run lint
 
 ## About the author
 
-Sebastian Hagens is a self-employed creative technologist working as a fullstack webdeveloper and tech consultant.  
-Follow Sebastian on Nostr:  
-Pubkey `npub1qe3e5wrvnsgpggtkytxteaqfprz0rgxr8c3l34kk3a9t7e2l3acslezefe`  
-NIP-05 id `sebastian@sebastix.dev`
+Sebastian Hagens is a self-employed creative technologist working as a Drupal & fullstack webdeveloper and tech consultant.
+
+
+**Follow Sebastian on Nostr**  
+Pubkey: `npub1qe3e5wrvnsgpggtkytxteaqfprz0rgxr8c3l34kk3a9t7e2l3acslezefe`    
+NIP-05 handle: `sebastian@sebastix.dev`
