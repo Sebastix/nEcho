@@ -20,19 +20,15 @@ getMarkdownData()
 </script>
 
 <template>
-  <div v-html="mdToHtml"></div>
+  <div>
+    <div v-html="mdToHtml" class="markdownContent">
+
+    </div>
+  </div>
 </template>
 
-<style scoped>
-h1 {
-    font-weight: 500;
-    font-size: 2.6rem;
-}
-h2 {
-    margin-top: 15px;
-}
-h3 {
-    margin-top: 10px;
-    font-size: 1.2rem;
+<style scoped lang="scss">
+.markdownContent p {
+  font-size: 16px;
 }
 </style>
