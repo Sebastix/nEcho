@@ -19,7 +19,7 @@ const ENVIRONMENT = import.meta.env.VITE_ENVIRONMENT
   </div>
 </template>
 
-<style scoped lang="scss">
+<style scoped lang="postcss">
 footer {
   display: block;
 

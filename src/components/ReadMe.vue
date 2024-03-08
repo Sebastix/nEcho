@@ -27,7 +27,7 @@ getMarkdownData()
   </div>
 </template>
 
-<style scoped lang="scss">
+<style scoped lang="postcss">
 .markdownContent p {
   font-size: 16px;
 }

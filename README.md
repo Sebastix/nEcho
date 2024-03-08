@@ -127,7 +127,10 @@ Sebastian Hagens is a self-employed creative technologist working as a Drupal & 
 
 **Follow Sebastian on Nostr**  
 Pubkey: `npub1qe3e5wrvnsgpggtkytxteaqfprz0rgxr8c3l34kk3a9t7e2l3acslezefe`      
-NIP-05 handle: `sebastian@sebastix.dev`
+Handle: `sebastian@sebastix.dev`
+
+## License
+`GPL-2.0` GNU General Public License v2.0
 
 ## Donations / funding
 
