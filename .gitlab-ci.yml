@@ -34,9 +34,7 @@ deploy:prod:
     - apk add rsync
     - rsync --version
   script:
-    - rsync -avz --delete -e 'ssh -p 1986' dist/. sebastix@nostrver.se:/var/www/necho
-.nostrver.se
-    - echo "Deployment ready, check https://necho
-.nostrver.se"
+    - rsync -avz --delete -e 'ssh -p 1986' dist/. sebastix@nostrver.se:/var/www/necho.nostrver.se
+    - echo "Deployment ready, check https://necho.nostrver.se"
   dependencies:
     - build:site
