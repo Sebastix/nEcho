@@ -3,7 +3,7 @@ import { ref, computed } from "vue";
 import { marked } from "marked";
 import prism from "prismjs";
 
-const mdfile = "https://raw.githubusercontent.com/Sebastix/echostr/master/README.md";
+const mdfile = "https://raw.githubusercontent.com/Sebastix/necho/master/README.md";
 const markDown = ref("");
 
 const getMarkdownData = async () => {

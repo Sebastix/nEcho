@@ -1,6 +1,6 @@
-# Echostr
+# nEcho
 
-Echostr is a webbased micro-application doing just one thing as good as possible. It will echo (advertise) your relay preferences to your social graph on Nostr. It means that it's trying to tell the clients of your followers which relay they should read to get the events you're posting. 
+nEcho is a webbased micro-application doing just one thing as good as possible. It will echo (advertise) your relay preferences to your social graph on Nostr. It means that it's trying to tell the clients of your followers which relay they should read to get the events you're posting. 
 
 [https://github.com/nostr-protocol/nips/blob/master/65.md](https://github.com/nostr-protocol/nips/blob/master/65.md)
 
@@ -15,7 +15,7 @@ To learn more about Mike, Gossip and NIP-65 you should listen to this [Nostrovia
 
 *Notes from the author @Sebastian* 
 * I started this project because I'm **scratching my own itch**. I'm loosing my list of relays and followed contacts because the use of different clients. 
-* **I’m an advocate of more Nostr clients need to adopt NIP-65 for this reason. With Echostr I’m trying to proof that purpose in practice.**
+* **I’m an advocate of more Nostr clients need to adopt NIP-65 for this reason. With nEcho I’m trying to proof that purpose in practice.**
 * I'm not familiar (yet) with all the NIPs from Nostr. I'm learning among the way by doing.
 * This is one of my first pieces of software I'm developing for Nostr.
 

@@ -1,5 +1,5 @@
 {
-  "name": "echostr.nostrver.se",
+  "name": "necho.nostrver.se",
   "description": "Advertise your relay preferences to other Nostr relays with Echostr.",
   "version": "0.0.1",
   "type": "module",
